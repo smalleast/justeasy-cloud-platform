@@ -1,0 +1,37 @@
+* {
+  box-sizing: border-box;
+}
+
+i {
+  font-size: 24px;
+  color: rgb(202, 206, 206);
+  cursor: pointer;
+  &:hover {
+    color: rgb(238, 119, 0);
+  }
+}
+
+body {
+  background: rgb(235,239,240);
+}
+
+input,
+textarea,
+button {
+  background: none;
+  border: none;
+  padding: 0;
+  margin: 0;
+  &:focus {
+    outline: none;
+  }
+}
+
+button {
+  user-select: none;
+}
+
+figure {
+  margin: 0;
+  padding: 0;
+}

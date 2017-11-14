@@ -1,0 +1,63 @@
+.button {
+  width: 100%;
+  height: 40px;
+  border-radius: 4px;
+  cursor: pointer;
+  &-primary {
+    color: rgb(255, 255, 255);
+    background: rgb(238, 119, 0);
+    &:hover {
+      background: rgb(255, 129, 0);
+    }
+  }
+  &.verification {
+    width: 92px;
+    height: 36px;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+
+  }
+  &.disabled, &[disabled] {
+    background: #EFEFEF;
+    color: #bfbfbf;
+    &.verification {
+      border-top: 1px solid rgb(191, 203, 217);
+      border-right: 1px solid rgb(191, 203, 217);
+      border-bottom: 1px solid rgb(191, 203, 217);
+    }
+  }
+  &-icon {
+    color: rgb(255, 255, 255);
+    background: rgb(238, 119, 0);
+    & > i {
+      color: rgb(255, 255, 255);
+    }
+    &:hover {
+      background: rgb(255, 129, 0);
+    }
+  }
+  &-icon-transparent {
+    background: transparent;
+    border: transparent;
+    color: rgb(17, 17, 17);
+    & > i {
+      color: rgb(202, 206, 206);
+    }
+    &:hover {
+      &, & > i {
+        color: rgb(238, 119, 0);
+      }
+    }
+  }
+  &.sm {
+    width: 60px;
+  }
+  &.md {
+    width: 120px;
+  }
+  &.lg {
+    width: 150px;
+  }
+}
